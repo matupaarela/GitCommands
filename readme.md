@@ -222,7 +222,7 @@ Para eliminar una rama debemos estar en la rama que queremos eliminar y ejecutam
 El conficto sucede cuando se modifica exactamente las mismas líneas de codigo.
 Si sucede un conficto git pedirá que se modifique los cambios o (solucionar los conflictos) de manera manual en cada archivo.
 
-
+master
 Correo: sistemas@procontbusiness.com
 
 Pass: 5cd?Sb97
