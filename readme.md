@@ -195,7 +195,9 @@ Para cambiar de rama en versiones inferiores a v2.23 podemos usar: `git checkout
 
 para versiones superiores podemos usar: `git switch [nombre rama]`
 
+    git switch develpment
 
+***Nota:** Antes de cambiar de una rama a otra se tiene que hacer commit a todos los cambios realizados en la rama que estemos, de otro modo git no nos permitirá el cambio*
 
 Correo: sistemas@procontbusiness.com
 
