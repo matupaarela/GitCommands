@@ -223,7 +223,7 @@ El conficto sucede cuando se modifica exactamente las mismas líneas de codigo.
 
 Si sucede un conficto git pedirá que se modifique los cambios o (solucionar los conflictos) de manera manual en cada archivo.
 
-## **Ignorar archivos**
+### **Ignorar archivos**
 Existen algunos archivos que tienes que ser ignorados, es decir que no se deben almacenar dentro del repositorio, para eso crearemos el archivo `.gitignore`
 
 Contenido de dicho archivo:
@@ -233,6 +233,24 @@ Contenido de dicho archivo:
 
     #para ignorar todos los archivos de una carpeta
     ./carpeta
+
+### **Github: trabajo colaborativo**
+Para realzar un trabajo colaborativo necesitamos crear un repositorio en github un vez creado el repositorio podemos clonarlo en nuestro pc con el comando:
+
+    git clone https://github.com/matupaarela/GitCommands.git
+
+**Importante:* para ejecutar este comando se tiene que estar posiicionado dentro de nuestra carpeta de proyectos y ahpi abrir la consola de git bash*
+
+Podemos trabajar directamente dentro de este repositorio ya que está en blanco.
+
+#### **git push**
+Nos permite subir los commits realizados a la plataforma github
+
+    git push origin master
+
+Al ejecutar este comando es probable que tengamos que ingresar nuestras credenciales de github si es que no tenemos configurado nuestras credenciales en nuestro equipo (PC).
+
+Ahora si ejecutamos un comando `git log` podremos observar que tenemos un commit `origin/master` el cual es la rama de la nube (remoto).
 
 Correo: sistemas@procontbusiness.com
 
