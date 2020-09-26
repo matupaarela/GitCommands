@@ -206,7 +206,7 @@ hasta este punto los cambios realizados en una rama diferente a master son indep
 
 para sincronizar o fusionar los cambios de development a la rama master, para eso tenemos que estar dentro de la rama master:
 
-    git merge
+    git merge development
 
 **Importante:* tener en cuenta los cambios realizados en el mismo archivo: si la modificación es es en archivos diferentes la gusión se realizará sin problemas.*
 
