@@ -1,12 +1,11 @@
 # **Comandos GIT**
 
-    Correo: sistemas@procontbusiness.com
-    Pass: 5cd?Sb97
+*Estos comandos fueron ejecutado y probados en git version 2.28.0.windows.1, por tanto si se está utilizando otras versiones se podría tener algunas diferencias.*
 
 ## **Configuración inicial (git config)**
 
 ### **git config --help**
-Nos permite obtener ayuda del comando anterior --help
+Muestra documentacion o manual de GIT
 
     git config --help
 
@@ -120,6 +119,67 @@ Permite mostrar los cambios de forma resumida.
 ## **Ramas locales y el historial**
 
 ### **git checkout [hash]**
-En este caso lo usaremos para nevegar entre commits
+En este caso lo usaremos para nevegar entre commits (viajar en el tiempo)
 
     git checkout 73328748211792f61fe2fbdf33dd959c4df79e91
+    git checkout 7332874
+
+para volver al commit actual (presente)
+
+    git checkout master
+
+### **git log**
+Documentacion oficial: https://git-scm.com/docs/git-log
+
+#### **git log --raw**
+Proporciona informacion extra al commit realizado
+
+    git log --raw
+
+#### **git log --summary**
+Proporciona una infomación resumida
+
+    git log --summary
+
+#### **git log --oneline**
+Proporciona informacion de commits de manera super resumida en una solo línea por commit
+
+    git log --oneline
+
+El comando anterior mostrará todos los commits posibles según la pantalla o la consola, si deseamos visualizar solo un numero exacto de commits podemos utilizar la siguiente variación:
+
+    git log --oneline n 5
+
+Donde 5 es el número de commits a mostrar.
+
+#### **git log --pretty=format:"format here"**
+Permite imprimir los resultados en un formato personalizado: https://git-scm.com/docs/git-log
+
+     git log --pretty=format:"El autor del commit %h fue %an"
+
+## **Ramas Locales**
+La línea de tiempo o rama principal siempre es ***master*** en git podemos trabajar con varias ramas y cada una es independiente (cada rama puede tener sus propios log, commits, etc.) de master y en futuro también pueden llegar a unirse mediante una sincronización.
+
+Creación de una nueva rama a partir de la rama actual (master) y tambie a partir del commit actual:
+
+    git checkout -b development
+
+Donde ` -b ` que proviene de `-branch` (rama) y development es el nombre de la nueva rama.
+para ver todas las ramas del repositio podemos ejecutar:
+
+    git branch
+
+Nos devolverá como resultado las ramas creadas en el repositorio y con asterisco por delante en la rama que estemos utilizando.
+
+Después de realizar algunos commits dentro de la rama *development* podemos hacer un `git log` para ver lo commits realizados y obtendremos los commits de todas las ramas:
+
+    git log
+
+También podemos usar el siguiente comando para obtener todos los commits de todas las ramas:
+
+    git log --all
+
+
+Correo: sistemas@procontbusiness.com
+
+Pass: 5cd?Sb97
