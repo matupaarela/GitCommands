@@ -219,7 +219,7 @@ Para eliminar una rama debemos estar en la rama que queremos eliminar y ejecutam
 ## **Ramas remotas y trabajo colaborativo**
 
 ### **Conflictos al fusionar ramas que modifican el mismo archivo**
-
+El conficto sucede cuando se modifica exactamente las mismas líneas de codigo.
 
 Correo: sistemas@procontbusiness.com
 
