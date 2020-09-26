@@ -220,9 +220,12 @@ Para eliminar una rama debemos estar en la rama que queremos eliminar y ejecutam
 
 ### **Conflictos al fusionar ramas que modifican el mismo archivo**
 El conficto sucede cuando se modifica exactamente las mismas líneas de codigo.
+
 Si sucede un conficto git pedirá que se modifique los cambios o (solucionar los conflictos) de manera manual en cada archivo.
 
-master
+## **Ignorar archivos**
+Existen algunos archivos que tienes que ser ignorados, es decir que no se deben almacenar dentro del repositorio, para eso crearemos el archivo `.gitignore`
+
 Correo: sistemas@procontbusiness.com
 
 Pass: 5cd?Sb97
