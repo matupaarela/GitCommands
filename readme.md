@@ -217,7 +217,7 @@ Para eliminar una rama debemos estar en la rama que queremos eliminar y ejecutam
 **Importante:* si la rama a eliminar no se a fusionado con la rama actual, los cambios realizados dentro de la rama a eliminar se perderán, a demás debemos de estar en una rama diferente a eliminar*
 
 ## **Ramas remotas y trabajo colaborativo**
-
+cambio
 
 Correo: sistemas@procontbusiness.com
 
