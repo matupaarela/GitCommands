@@ -189,6 +189,9 @@ Podemos visualizar información más precisa con `--graph` y `--decorate`
     git log --online --all --graph
     git log --online --all --graph --decorate
 
+*Este comando nos servirá para ver la línea de tiempo de cada rama, por tanto: si tenemos una sola rama no encontraremos sentido a usarla.*
+
+## **Cambio de rama**
 Para cambiar de rama en versiones inferiores a v2.23 podemos usar: `git checkout [nombre rama]`:
 
     git checkout master
@@ -198,6 +201,20 @@ para versiones superiores podemos usar: `git switch [nombre rama]`
     git switch develpment
 
 ***Nota:** Antes de cambiar de una rama a otra se tiene que hacer commit a todos los cambios realizados en la rama que estemos, de otro modo git no nos permitirá el cambio*
+
+hasta este punto los cambios realizados en una rama diferente a master son independientes, por lo tanto desde master no tendremos los cambios realizados en otras ramas.
+
+para sincronizar o fusionar los cambios de development a la rama master, para eso tenemos que estar dentro de la rama master:
+
+    git merge
+
+**Importante:* tener en cuenta los cambios realizados en el mismo archivo: si la modificación es es en archivos diferentes la gusión se realizará sin problemas.*
+
+Para eliminar una rama debemos estar en la rama que queremos eliminar y ejecutamos el comando:
+
+    git branch -D development
+
+
 
 Correo: sistemas@procontbusiness.com
 
