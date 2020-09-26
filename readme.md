@@ -72,12 +72,54 @@ Es un atajo al git commit, permite realizar un commit sin necesidad de usar el e
 
     git commit -m "mensaje aquí"
 
+### **git log**
+Muestra los mensajes o (commits) realizados en el proyecto (repositorio)
+
+    git log
+
 ### **git commit -am ""**
 Agregar commits de cambios reañizados solo en archivos modificados (los nuevos no serán tomados en cuenta).
 
     git commit -am "mensaje aquí"
 
-### **git log**
-Muestra los mensajes o (commits) realizados en el proyecto (repositorio)
+## **Resetear cambios realizados en el espacio de trabajo**
 
-    git log
+### **git checkout**
+Permite resetear cambios en caso de regresar al estado anterior:
+
+    git chekout index.html
+    git chekout style.css
+    ...
+
+Para resetear varios archivos cambiado a la vez: *-f* permite forzar aplicar los cambios, este caso forzará el reseteo.
+
+    git checkout -f
+
+## **Resetear cambios del área de preparación**
+
+### **git restore --staged [nombre archivo]**
+Permite regresar un archivo al espacio de trabajo: es decir cambia de estado (de área de preparación a espacio de trabajo)
+
+    git restore --staged index.html
+    git restore --staged style.css
+
+## **Diferencia de cambios en un archivo**
+
+### **git diff [nombre archivo]**
+Permite ver la diferecia entre lo que estamos realizado y lo que ya tenemos en el repositorio
+
+    git diff index.html
+
+El comando anterior mostrarás las líneas de código modificadas con el simbolo (+) si se agrego o (-) si se elimino alguna línea.
+
+### **git diff --stat [nombre archivo]**
+Permite mostrar los cambios de forma resumida.
+
+    git diff --stat index.html
+
+## **Ramas locales y el historial**
+
+### **git checkout [hash]**
+En este caso lo usaremos para nevegar entre commits
+
+    git checkout 73328748211792f61fe2fbdf33dd959c4df79e91
