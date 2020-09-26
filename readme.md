@@ -226,6 +226,14 @@ Si sucede un conficto git pedirá que se modifique los cambios o (solucionar los
 ## **Ignorar archivos**
 Existen algunos archivos que tienes que ser ignorados, es decir que no se deben almacenar dentro del repositorio, para eso crearemos el archivo `.gitignore`
 
+Contenido de dicho archivo:
+
+    # Este es el listado de archivos a ignorar
+    ignorado.txt
+
+    #para ignorar todos los archivos de una carpeta
+    ./carpeta
+
 Correo: sistemas@procontbusiness.com
 
 Pass: 5cd?Sb97
