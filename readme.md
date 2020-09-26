@@ -171,13 +171,30 @@ para ver todas las ramas del repositio podemos ejecutar:
 
 Nos devolverá como resultado las ramas creadas en el repositorio y con asterisco por delante en la rama que estemos utilizando.
 
-Después de realizar algunos commits dentro de la rama *development* podemos hacer un `git log` para ver lo commits realizados y obtendremos los commits de todas las ramas:
+Después de realizar algunos commits dentro de la rama *development* podemos hacer un `git log` para ver lo commits realizados y obtendremos los commits de todas las ramas, cabe mensionar que si los commits son bastantes giot intentará ocultar algunos commits:
 
     git log
 
-También podemos usar el siguiente comando para obtener todos los commits de todas las ramas:
+Para mostrar todos los commits podemos usar el siguiente comando:
 
     git log --all
+
+Para ver los commits en una solo línea cada una ya sabemos que podemos agregar `--oneline`
+
+    git log --oneline
+    git log --oneline --all
+
+Podemos visualizar información más precisa con `--graph` y `--decorate`
+
+    git log --online --all --graph
+    git log --online --all --graph --decorate
+
+Para cambiar de rama en versiones inferiores a v2.23 podemos usar: `git checkout [nombre rama]`:
+
+    git checkout master
+
+para versiones superiores podemos usar: `git switch [nombre rama]`
+
 
 
 Correo: sistemas@procontbusiness.com
