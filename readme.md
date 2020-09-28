@@ -243,7 +243,7 @@ Para realzar un trabajo colaborativo necesitamos crear un repositorio en github 
 
 Podemos trabajar directamente dentro de este repositorio ya que está en blanco.
 
-#### **git push**
+#### **git push origin [nombre rama]**
 Nos permite subir los commits realizados a la plataforma github
 
     git push origin master
@@ -251,6 +251,38 @@ Nos permite subir los commits realizados a la plataforma github
 Al ejecutar este comando es probable que tengamos que ingresar nuestras credenciales de github si es que no tenemos configurado nuestras credenciales en nuestro equipo (PC).
 
 Ahora si ejecutamos un comando `git log` podremos observar que tenemos un commit `origin/master` el cual es la rama de la nube (remoto).
+
+#### **git fetch origin**
+Permite obtener la informacion desde el repositorio remoto al local
+
+    git fetch origin
+
+#### **git pull origin [nombre rama]**
+Permite jalar informacion desde el repositorio remoto a local desde una rama especifica.
+
+    git pull origin master
+
+### **Enviar ramas locales a remoto**
+Para realizar este proceso se tiene que crear una nueva rama en local:
+    
+    git checkout -b test
+
+Luego ejecutamos en siguiente comando para subir la rama ``test``:
+
+    git push origin test
+
+Con eso tendremos la rama `test` en la nube (remoto)
+
+**Nota:* Estas ramas son útiles en caso de trabajar en equipo, o nosotros mismos desde otro computador.*
+
+### **Eliminar ramas remotas**
+Este comando permite eliminar ramas remotas desde local:
+
+    git push --delete origin test
+
+## **Herramientas Gráficas**
+Podemos realizar las mismas acciones desde github, vscode, etc.
+
 
 Correo: sistemas@procontbusiness.com
 
