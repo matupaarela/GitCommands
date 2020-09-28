@@ -3,4 +3,4 @@ ignorado.txt
 index.html
 
 #para ignorar todos los archivos de una carpeta
-./carpeta
+#./carpeta
