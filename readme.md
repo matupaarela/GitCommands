@@ -284,6 +284,17 @@ Este comando permite eliminar ramas remotas desde local:
 Podemos realizar las mismas acciones desde github, vscode, etc.
 
 
-Correo: sistemas@procontbusiness.com
+## **Subir un proyecto a github**
+Para subir un proyecto a github tenemos que crear un reposiorio en la pagina de git y compiar la url(https o ssh) del repositorio creado, luego de tener todos los commits en local tenemos que agregar una url remota a nuestro repositorio local:
 
-Pass: 5cd?Sb97
+    git remote add origin https://github.com/matupaarela/GitCommands.git
+
+Después ejecutamos el comando siguiente, que no permitirá agregar una rama al repositorio en este caso la rama master (origin\master)
+
+    git branch -M master
+
+Finalmente empujamos los cambios (nuestro repositorio local a remoto):
+
+    git push origin master
+
+Hasta este punto hemos conocido los comando básicos de GIT.
