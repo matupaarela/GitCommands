@@ -13,7 +13,7 @@ Muestra documentacion o manual de GIT
 Asigna una configuración de manera global
 
     git config --global user.name "Marco Antonio T.A."
-    git config --global user.email "matupaarela@outlook.com"
+    git config --global user.email "matupaarela@hotmail.com"
 
 Listar opciones o la cofiguración que tiene git
 
